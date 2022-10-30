@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: rgb(75, 75, 75);
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: rgb(235, 251, 253);
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    color: white;
+    text-align: center;
+}
+hr{
+    color: grey;
+}
+.designation{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    color: lightblue;
+    text-align: center;
+}
+.description{
+    font-size: 0.75rem;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.personal-details{
+    display: flex;
+    flex-direction: column;
+}
+.icon{
+    color: white;
+    padding: 5px;
+    font-size: 0.9rem
+}
+.icon img{
+    width: 30px;
+    margin: 5px;
+}
+.skills{
+    padding: 1rem 0.5rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+.skill-item{
+    padding: 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    background-color: white;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.sec{
+    padding-bottom: 1rem;
+}
+.para{
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+}
+.title-name{
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: rgb(53, 47, 47);
+}
+.course{
+    font-size: 0.95rem;
+    padding: 0.5rem;
+    color: rgb(53, 47, 47);
+}
+
+@media screen and (max-width: 673px) {
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
